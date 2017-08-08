@@ -22,6 +22,24 @@
           </div>
       </div>
     </div>
+    <div class="tab-content">
+      <div class="tab-item">
+        <span class="img"></span>
+        <p class="text">现货</p>
+      </div>
+      <div class="tab-item">
+        <span class="img"></span>
+        <p class="text">抢购</p>
+      </div>
+      <div class="tab-item">
+        <span class="img"></span>
+        <p class="text">我的订单</p>
+      </div>
+      <div class="tab-item">
+        <span class="img"></span>
+        <p class="text">我的关注</p>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -64,7 +82,6 @@ export default{
       padding: 0 10px;
       box-sizing: border-box;
       height: 44px;
-      background: #eee;
       .search-box{
         width: 270px;
         height: 34px;
@@ -123,6 +140,16 @@ export default{
           width: 100%;
           height: 100%;
         }
+      }
+    }
+    .tab-content{
+      display: flex;
+      width: 100%;
+      height: 55px;
+      background: #fff;
+      .tab-item{
+        flex: 1;
+        text-align: center;
       }
     }
   }
