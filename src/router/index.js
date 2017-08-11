@@ -5,6 +5,7 @@ import Sort from '@/components/sort/sort.vue'
 import Consult from '@/components/consult/consult.vue'
 import Cart from '@/components/cart/cart.vue'
 import Me from '@/components/me/me.vue'
+import infoDetail from '@/components/info-detail/info-detail.vue'
 
 Vue.use(Router)
 
@@ -24,7 +25,13 @@ export default new Router({
     },
     {
       path: '/consult',
-      component: Consult
+      component: Consult,
+      children: [
+        {
+          path: ':id',
+          component: infoDetail
+        }
+      ]
     },
     {
       path: '/cart',
